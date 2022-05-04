@@ -1,0 +1,13 @@
+.carousel {
+    margin: auto;
+    max-width: 1024px;
+    }.carousel, .carousel-inner>div {
+        height: 400px;
+    }.carousel-inner>div>img {
+        position: absolute;
+        bottom: -200px;
+        width: 1024px;
+    }.carousel-inner>div>div>h3 {
+        text-shadow: 3px 3px 2px black;
+       
+}
