@@ -24,7 +24,6 @@
 			max-width: 300px;
 			max-height: 500px;
 		}
-
 		div {
 			cursor: context-menu;
 		}
@@ -59,19 +58,10 @@
 			text-align: center;
 		}
 	</style>
-
-	<script language="javascript">
-
-		$(document).ready(function () {
-
-		})
-
-	</script>
 </head>
 
 <body>
-	<div
-		style="height: 80px; text-align: center; line-height: 80px; font-size: 28px; font-weight: bold; background-color:rgb(253, 253, 253);">
+	<div style="height: 80px; text-align: center; line-height: 80px; font-size: 28px; font-weight: bold; background-color:rgb(253, 253, 253);">
 		<img src="img/covid-19.jpg" width="55px"> 　防 疫 專 家
 	</div>
 	<!-- navbar -->
@@ -87,13 +77,6 @@
 
 			<div class="collapse navbar-collapse" id="collapsibleNavbar">
 				<ul class="navbar-nav">
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">其他縣市</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="https://www.cdc.gov.tw/" target="_blank">新北市</a></li>
-							<li><a class="dropdown-item" href="https://www.cdc.gov.tw/" target="_blank">台北市</a></li>
-						</ul>
-					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">國家防疫網站</a>
 						<ul class="dropdown-menu">
@@ -153,54 +136,23 @@
 			</button>
 		</div>
 	</div>
-	<!-- hr -->
+
+	<!-- cd19-data -->
 	<hr style="padding-top: 2px; width: 97%; margin: auto; margin-top: 10px; margin-bottom: 20px;">
-
-	<div id="js-cd19-data" style="display: flex;padding-left: calc(50% - 512px); padding-right: calc(50% - 512px);">
-		<!-- cd19_data.js -->
-	</div>
-
+	<div style="padding-left: calc(50% - 512px); padding-right: calc(50% - 512px);">
+		<div class="d-flex justify-content-center"><div>
+			<button type="button" class="btn btn-outline-secondary btn-choose-county" style="margin: 0px 5px 0px 5px;">台北市</button>
+			<button type="button" class="btn btn-outline-secondary btn-choose-county" style="margin: 0px 5px 0px 5px;">新北市</button>
+		</div></div>
+		<div style="height: 20px;"></div>
+		<div id="js-cd19-data" style="display: flex;">
+			<!-- cd19_data.js -->
+		</div>
+	</div >
 	<hr style="padding-top: 2px; width: 97%; margin: auto; margin-top: 20px; margin-bottom: 10px;">
+
 	<!-- imformation -->
 	<div style="display: flex;">
-		<!-- <span style="width: auto; height: 500px; background-color: rgb(226, 226, 226);">
-			<table class="table text-center table-striped table-hover table-style">
-				<thead class="table-top">
-					<tr>
-						<th scope="col"></th>
-						<th scope="col">12-17</th>
-						<th scope="col">18-29</th>
-						<th scope="col">30-49</th>
-						<th scope="col">50-64</th>
-						<th scope="col">65-74</th>
-						<th scope="col">75以上</th>
-						<th scope="col">總計</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">第一劑</th>
-						<td>Mark</td>
-						<td>Otto</td>
-						<td>@mdo</td>
-						<td>@mdo</td>
-						<td>@mdo</td>
-						<td>@mdo</td>
-						<td>@mdo</td>
-					</tr>
-					<tr>
-						<th scope="row">第二劑</th>
-						<td>Jacob</td>
-						<td>Thornton</td>
-						<td>@fat</td>
-						<td>@fat</td>
-						<td>@fat</td>
-						<td>@fat</td>
-						<td>@fat</td>
-					</tr>
-				</tbody>
-			</table>
-		</span> -->
 		<!-- NewsList -->
 		<div class="list-bar ms-auto">
 			<div class="overflow-auto">
@@ -215,4 +167,4 @@
 	<div style="height: 150px; background-color: #212529;"></div>
 </body>
 
-</html>
+</html >
