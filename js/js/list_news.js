@@ -9,14 +9,16 @@ $(function(){
             class: 'list-group-item list-group-item-action',
             href: link,
             target: '_blank'
-        }).append(`
+        }).css("cursor","context-menu")
+        
+        .append(`
             <div>${title} ${date}</div>
             <div class="fw-bold">${text}</div>
         `).appendTo('#js-insert-news');
     }
 
     // test
-    for(let i=0; i<12; i++){
+    for(let i=0; i<75; i++){
         InsertItem('index.html','[測試]',`${i}/00`,'蔡智凱發文反對不斷封城後 又自刪文章')
     }
 });

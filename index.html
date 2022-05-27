@@ -24,53 +24,33 @@
 			max-width: 300px;
 			max-height: 500px;
 		}
-		div {
-			cursor: context-menu;
-		}
 
 		@media screen and (max-width:500px) {
 			.list-bar {
 				display: none;
 			}
 		}
-
-		.table-style {
-			--bs-table-bg: #FFFFFF;
-			--bs-table-striped-bg: #D0E4F5;
-			--bs-table-striped-color: #000;
-			--bs-table-active-bg: #bacbe6;
-			--bs-table-active-color: #000;
-			--bs-table-hover-bg: #bfd1ec;
-			--bs-table-hover-color: #000;
-			border-color: #bacbe6;
-			font-family: Arial;
-		}
-
-		.table-top {
-			--bs-table-bg: #0B6FA4;
-			color: white;
-		}
-
-		th {
-			font-size: 18px;
-			line-height: 18px;
-			padding: 8px !important;
-			text-align: center;
-		}
 	</style>
+
+	<script>
+		$(function(){
+			var test = '<div style="height: 100px; width: 100px; background-color: #212529;"></div>';
+
+		})
+
+	</script>
 </head>
 
 <body>
+	
 	<div style="height: 80px; text-align: center; line-height: 80px; font-size: 28px; font-weight: bold; background-color:rgb(253, 253, 253);">
 		<img src="img/covid-19.jpg" width="55px"> 　防 疫 專 家
 	</div>
 	<!-- navbar -->
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark  sticky-top">
 		<div class="container-fluid">
-			<!-- <div id="test" class="navbar-collapse collapse"></div> -->
+			<div style="padding-left: calc((95% - 1024px)/2);"><a class="navbar-brand" href="index.html">台灣</a></div>
 
-			<a class="navbar-brand" href="index.html" style="padding-left: calc((95% - 1024px)/2);">台灣</a>
-			<!-- <div class="navbar-text bg-light me-auto vr" style="opacity: 1;"></div> -->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -80,9 +60,8 @@
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">國家防疫網站</a>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="https://www.cdc.gov.tw/" target="_blank">衛生福利部疾病管制署</a>
-							</li>
-							<li><a class="dropdown-item" href="https://covid-19.nchc.org.tw/">COVID-19 全球疫情地圖</a></li>
+							<li><a class="dropdown-item" target="_blank" href="https://www.cdc.gov.tw/">衛生福利部疾病管制署</a></li>
+							<li><a class="dropdown-item" target="_blank" href="https://covid-19.nchc.org.tw/">COVID-19 全球疫情地圖</a></li>
 						</ul>
 					</li>
 					<li class="nav-item">
@@ -139,13 +118,12 @@
 
 	<!-- cd19-data -->
 	<hr style="padding-top: 2px; width: 97%; margin: auto; margin-top: 10px; margin-bottom: 20px;">
-	<div style="padding-left: calc(50% - 512px); padding-right: calc(50% - 512px);">
+	<div id="js-cd19-data" style="padding-left: calc(50% - 512px); padding-right: calc(50% - 512px);">
 		<div class="d-flex justify-content-center"><div>
-			<button type="button" class="btn btn-outline-secondary btn-choose-county" style="margin: 0px 5px 0px 5px;">台北市</button>
-			<button type="button" class="btn btn-outline-secondary btn-choose-county" style="margin: 0px 5px 0px 5px;">新北市</button>
+			
 		</div></div>
-		<div style="height: 20px;"></div>
-		<div id="js-cd19-data" style="display: flex;">
+		<div style="height: 10px;"></div>
+		<div style="display: flex;">
 			<!-- cd19_data.js -->
 		</div>
 	</div >
