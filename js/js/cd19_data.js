@@ -47,8 +47,8 @@ $(function(){
         btn_navbar_brand.text(res[pos][0]);
     });
 
-    $.getJSON('http://cs102.nihs.tp.edu.tw:5050/job1').then((res) => { console.log(res);
+    // $.getJSON('http://cs102.nihs.tp.edu.tw:5050/job1').then((res) => { console.log(res);
 
-    });
+    // });
 });
 
