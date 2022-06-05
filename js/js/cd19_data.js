@@ -8,7 +8,7 @@ $(function(){
         ['累計確診', '新增確診', '第一劑', '第二劑']
     ];
     var res = [
-        ['台灣','981,141', '+85,356', '1,135', '86.24%','+38'],
+        ['台灣','981,141', '+85,356', '1,135', '86.24%'],
         ['新北市','372,720', '+27,230', '86%', '81.5%'],
         ['台北市','176,096', '+12,069', '84.5%', '80.6%'],
         ['基隆市','36,598', '+2,428', '87.6%', '82.8%'],
@@ -27,12 +27,12 @@ $(function(){
         `);
     }
     // button
-    for(let i=1; i<=5; i++){
+    for(let i=1; i<res.length; i++){
         var btn = $(`<button type="button" class="btn-choose-county btn btn-outline-secondary" style="margin: 0px 5px 10px 5px;">${res[i][0]}</button>`);
         cd19_data.find('div').eq(0).find('div').append(btn);
     }
 
-    var cd19_data_box= $('.cd19_data_box'), cd19_box_top = $('.cd19_box_top'), cd19_box_bottom = $('.cd19_box_bottom');
+    var cd19_box_top = $('.cd19_box_top'), cd19_box_bottom = $('.cd19_box_bottom');
     var btn_choose_county = $(".btn-choose-county");
     var btn_navbar_brand = $(".navbar-brand");
 

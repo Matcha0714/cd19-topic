@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>武漢肺炎防疫專家</title>
+	<title>新冠肺炎防疫專家</title>
 	<link rel="shortcut icon" href="icon.png" type="image/gif">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,19 +31,11 @@
 			}
 		}
 	</style>
-
-	<script>
-		$(function(){
-			var test = '<div style="height: 100px; width: 100px; background-color: #212529;"></div>';
-
-		})
-
-	</script>
 </head>
 
 <body>
 	
-	<div style="height: 80px; text-align: center; line-height: 80px; font-size: 28px; font-weight: bold; background-color:rgb(253, 253, 253);">
+	<div style="height: 85px; text-align: center; line-height: 80px; font-size: 28px; font-weight: bold; background-color:rgb(253, 253, 253);">
 		<img src="img/covid-19.jpg" width="55px"> 　防 疫 專 家
 	</div>
 	<!-- navbar -->
@@ -89,23 +81,17 @@
 
 			<!-- The slideshow/carousel -->
 			<div class="carousel-inner">
-				<div class="carousel-item">
-					<img src="img/1024x768.jpg" alt="Los Angeles" class="d-block">
+				<div class="carousel-item active">
+					<img src="img/1024x768.jpg" alt="New York" class="d-block" style="bottom: -200px;">
 					<div class="carousel-caption">
 						<h3>Taiwan</h3>
 					</div>
 				</div>
-				<div class="carousel-item active">
-					<img src="img/taipei.jpg" alt="Chicago" class="d-block">
-					<div class="carousel-caption">
-						<h3>Taipei</h3>
-					</div>
+				<div class="carousel-item">
+					<img src="img/img1.jpg" alt="Los Angeles" class="d-block">
 				</div>
 				<div class="carousel-item">
-					<img src="img/1024x768.jpg" alt="New York" class="d-block">
-					<div class="carousel-caption">
-						<h3>New Taipei</h3>
-					</div>
+					<img src="img/img2.jpg" alt="Chicago" class="d-block" style="bottom: -15px;">
 				</div>
 			</div>
 
@@ -135,11 +121,17 @@
 	<!-- imformation -->
 	<div style="display: flex;">
 		<!-- NewsList -->
-
+		<div class="list-bar ms-auto" style="margin-right: 10px;">
+			<div class="overflow-auto">
+				<div id="js-insert-news" class="list-group">
+					<!-- list_news.js -->
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div style="height: 500px;"></div>
 	<div style="height: 150px; background-color: #212529;"></div>
 </body>
 
-</html >
+</html>
